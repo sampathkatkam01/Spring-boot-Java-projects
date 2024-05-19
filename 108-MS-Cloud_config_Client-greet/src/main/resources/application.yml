@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: greet
+  config:
+    import: optional:configserver:http://localhost:7071
+    
+server:
+  port: 7073
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: 109-MS-Redis-cache
+  data:
+    redis:
+      password: xFChuIwwVbl7fW9tll32zRm42MFkdJag
+      port: 16724
+      url: redis-16724.c212.ap-south-1-1.ec2.redns.redis-cloud.com
+      username: default

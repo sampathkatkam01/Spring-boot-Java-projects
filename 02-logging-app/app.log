@@ -1,0 +1,58 @@
+2024-03-04T23:26:48.664+05:30  INFO 13860 --- [main] in.sampath.Application                   : Starting Application using Java 17.0.10 with PID 13860 (C:\26-JRTP(projects)\workspace\02-logging-app\target\classes started by sampa in C:\26-JRTP(projects)\workspace\02-logging-app)
+2024-03-04T23:26:48.669+05:30  INFO 13860 --- [main] in.sampath.Application                   : No active profile set, falling back to 1 default profile: "default"
+2024-03-04T23:26:49.608+05:30  INFO 13860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-03-04T23:26:49.623+05:30  INFO 13860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-04T23:26:49.624+05:30  INFO 13860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-04T23:26:49.684+05:30  INFO 13860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-04T23:26:49.684+05:30  INFO 13860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 963 ms
+2024-03-04T23:26:50.056+05:30  INFO 13860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9091 (http) with context path ''
+2024-03-04T23:26:50.064+05:30  INFO 13860 --- [main] in.sampath.Application                   : Started Application in 1.785 seconds (process running for 2.41)
+2024-03-04T23:27:03.693+05:30  INFO 13860 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-04T23:27:03.693+05:30  INFO 13860 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-04T23:27:03.694+05:30  INFO 13860 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-04T23:27:03.735+05:30 ERROR 13860 --- [http-nio-9091-exec-1] in.sampath.service.MsgService            : this is error message....
+2024-03-04T23:27:03.735+05:30  WARN 13860 --- [http-nio-9091-exec-1] in.sampath.service.MsgService            : this is Warning massage..
+2024-03-04T23:30:58.794+05:30 ERROR 13860 --- [http-nio-9091-exec-3] in.sampath.service.MsgService            : this is error message....
+2024-03-04T23:30:58.794+05:30  WARN 13860 --- [http-nio-9091-exec-3] in.sampath.service.MsgService            : this is Warning massage..
+2024-03-04T23:41:56.669+05:30 ERROR 13860 --- [http-nio-9091-exec-6] in.sampath.service.MsgService            : this is error message....
+2024-03-04T23:41:56.670+05:30  WARN 13860 --- [http-nio-9091-exec-6] in.sampath.service.MsgService            : this is Warning massage..
+2024-03-04T23:44:53.287+05:30  INFO 15144 --- [main] in.sampath.Application                   : Starting Application using Java 17.0.10 with PID 15144 (C:\26-JRTP(projects)\workspace\02-logging-app\target\classes started by sampa in C:\26-JRTP(projects)\workspace\02-logging-app)
+2024-03-04T23:44:53.290+05:30  INFO 15144 --- [main] in.sampath.Application                   : No active profile set, falling back to 1 default profile: "default"
+2024-03-04T23:44:53.980+05:30  INFO 15144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9091 (http)
+2024-03-04T23:44:53.991+05:30  INFO 15144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-04T23:44:53.992+05:30  INFO 15144 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-04T23:44:54.044+05:30  INFO 15144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-04T23:44:54.045+05:30  INFO 15144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 704 ms
+2024-03-04T23:44:54.314+05:30  WARN 15144 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-03-04T23:44:54.327+05:30  INFO 15144 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-04T23:44:54.342+05:30 ERROR 15144 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9091 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9091 or configure this application to listen on another port.
+
+2024-03-04T23:47:32.688+05:30  INFO 8612 --- [main] in.sampath.Application                   : Starting Application using Java 17.0.10 with PID 8612 (C:\26-JRTP(projects)\workspace\02-logging-app\target\classes started by sampa in C:\26-JRTP(projects)\workspace\02-logging-app)
+2024-03-04T23:47:32.693+05:30  INFO 8612 --- [main] in.sampath.Application                   : No active profile set, falling back to 1 default profile: "default"
+2024-03-04T23:47:33.419+05:30  INFO 8612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9092 (http)
+2024-03-04T23:47:33.432+05:30  INFO 8612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-04T23:47:33.433+05:30  INFO 8612 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-04T23:47:33.487+05:30  INFO 8612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-04T23:47:33.487+05:30  INFO 8612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+2024-03-04T23:47:33.766+05:30  INFO 8612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9092 (http) with context path ''
+2024-03-04T23:47:33.774+05:30  INFO 8612 --- [main] in.sampath.Application                   : Started Application in 1.456 seconds (process running for 2.073)
+2024-03-05T00:02:00.171+05:30 ERROR 13860 --- [http-nio-9091-exec-7] in.sampath.service.MsgService            : this is error message....
+2024-03-05T00:02:00.442+05:30  WARN 13860 --- [http-nio-9091-exec-7] in.sampath.service.MsgService            : this is Warning massage..
+2024-03-05T00:03:31.844+05:30 ERROR 13860 --- [http-nio-9091-exec-1] in.sampath.service.MsgService            : this is error message....
+2024-03-05T00:03:31.845+05:30  WARN 13860 --- [http-nio-9091-exec-1] in.sampath.service.MsgService            : this is Warning massage..
+2024-03-05T00:04:24.940+05:30  INFO 8612 --- [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-03-05T00:39:21.926+05:30  INFO 13860 --- [RMI TCP Connection(79)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.

@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: Resillence4j_Circuit_Breaker
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        -  '*'
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+      
+server:
+    port: 9999
+      
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        register-health-indicator: true
+        sliding-window-size: 5
+        wait-duration-in-open-state: 30s
+        permitted-number-of-calls-in-half-open-state: 3
+        minimum-number-of-calls: 2
+        automatic-transition-from-open-to-half-open-enabled: true
+        failure-rate-threshold: 50
+        event-consumer-buffer-size: 10 
+ 

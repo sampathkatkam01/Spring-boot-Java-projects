@@ -1,0 +1,78 @@
+2024-03-05 00:04:31,194 [main] INFO  in.sampath.Application                             - Starting Application using Java 17.0.10 with PID 24232 (C:\26-JRTP(projects)\workspace\03-logback-app\target\classes started by sampa in C:\26-JRTP(projects)\workspace\03-logback-app)
+2024-03-05 00:04:31,195 [main] INFO  in.sampath.Application                             - No active profile set, falling back to 1 default profile: "default"
+2024-03-05 00:04:31,889 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port 9090 (http)
+2024-03-05 00:04:31,897 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2024-03-05 00:04:31,898 [main] INFO  o.apache.catalina.core.StandardService             - Starting service [Tomcat]
+2024-03-05 00:04:31,904 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-05 00:04:31,944 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2024-03-05 00:04:31,945 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 692 ms
+2024-03-05 00:04:32,191 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2024-03-05 00:04:32,210 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port 9090 (http) with context path ''
+2024-03-05 00:04:32,216 [main] INFO  in.sampath.Application                             - Started Application in 1.331 seconds (process running for 2.022)
+2024-03-05 00:12:55,258 [RMI TCP Connection(18)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-03-05 00:12:55,258 [RMI TCP Connection(18)-127.0.0.1] INFO  o.apache.coyote.http11.Http11NioProtocol           - Stopping ProtocolHandler ["http-nio-9090"]
+2024-03-05 00:13:35,382 [main] ERROR o.springframework.boot.SpringApplication           - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing attribute [class] in element [appender] near line 3
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing attribute [name] in element [appender] near line 3
+ERROR in ch.qos.logback.core.joran.spi.SaxEventInterpreter@3:18 - Exception in body() method for action [ch.qos.logback.core.joran.action.AppenderAction] ch.qos.logback.core.joran.spi.ActionException: current model is null. Is <configuration> element missing?
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:329)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at in.sampath.Application.main(Application.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing attribute [class] in element [appender] near line 3
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Missing attribute [name] in element [appender] near line 3
+ERROR in ch.qos.logback.core.joran.spi.SaxEventInterpreter@3:18 - Exception in body() method for action [ch.qos.logback.core.joran.action.AppenderAction] ch.qos.logback.core.joran.spi.ActionException: current model is null. Is <configuration> element missing?
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:277)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:255)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:334)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:74)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:61)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:189)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 19 common frames omitted
+	Suppressed: ch.qos.logback.core.joran.spi.ActionException: current model is null. Is <configuration> element missing?
+		at ch.qos.logback.core.joran.action.BaseModelAction.body(BaseModelAction.java:69)
+		at ch.qos.logback.core.joran.spi.SaxEventInterpreter.callBodyAction(SaxEventInterpreter.java:257)
+		at ch.qos.logback.core.joran.spi.SaxEventInterpreter.characters(SaxEventInterpreter.java:165)
+		at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:56)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.playSaxEvents(GenericXMLConfigurator.java:196)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelFromSaxEventList(GenericXMLConfigurator.java:190)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:164)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:122)
+		at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:65)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.configureByResourceUrl(LogbackLoggingSystem.java:287)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadConfiguration$1(LogbackLoggingSystem.java:249)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:467)
+		at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:244)
+		... 24 common frames omitted
+2024-03-05 00:13:50,216 [main] INFO  in.sampath.Application                             - Starting Application using Java 17.0.10 with PID 4956 (C:\26-JRTP(projects)\workspace\03-logback-app\target\classes started by sampa in C:\26-JRTP(projects)\workspace\03-logback-app)
+2024-03-05 00:13:50,217 [main] INFO  in.sampath.Application                             - No active profile set, falling back to 1 default profile: "default"
+2024-03-05 00:13:50,872 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port 9090 (http)
+2024-03-05 00:13:50,880 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2024-03-05 00:13:50,882 [main] INFO  o.apache.catalina.core.StandardService             - Starting service [Tomcat]
+2024-03-05 00:13:50,882 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-05 00:13:50,924 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2024-03-05 00:13:50,925 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 653 ms
+2024-03-05 00:13:51,172 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2024-03-05 00:13:51,186 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port 9090 (http) with context path ''
+2024-03-05 00:13:51,192 [main] INFO  in.sampath.Application                             - Started Application in 1.272 seconds (process running for 1.962)
+2024-03-05 00:39:23,103 [RMI TCP Connection(34)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-03-05 00:39:23,193 [RMI TCP Connection(34)-127.0.0.1] INFO  o.apache.coyote.http11.Http11NioProtocol           - Stopping ProtocolHandler ["http-nio-9090"]
